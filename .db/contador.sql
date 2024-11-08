@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Tempo de geração: 26-Out-2022 às 19:32
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Host: 127.0.0.1
+-- Tempo de geração: 08/11/2024 às 16:09
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastros`
+-- Estrutura para tabela `cadastros`
 --
 
 CREATE TABLE `cadastros` (
@@ -39,12 +39,12 @@ CREATE TABLE `cadastros` (
   `faixa3total` double(10,2) DEFAULT 0.00,
   `faixa4qnt` int(11) DEFAULT 0,
   `faixa4total` double(10,2) DEFAULT 0.00
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `faixas`
+-- Estrutura para tabela `faixas`
 --
 
 CREATE TABLE `faixas` (
@@ -53,10 +53,10 @@ CREATE TABLE `faixas` (
   `faixa2` double(10,2) DEFAULT 0.00,
   `faixa3` double(10,2) DEFAULT 0.00,
   `faixa4` double(10,2) DEFAULT 0.00
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `faixas`
+-- Despejando dados para a tabela `faixas`
 --
 
 INSERT INTO `faixas` (`id`, `faixa1`, `faixa2`, `faixa3`, `faixa4`) VALUES
@@ -65,7 +65,7 @@ INSERT INTO `faixas` (`id`, `faixa1`, `faixa2`, `faixa3`, `faixa4`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuarios`
+-- Estrutura para tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -73,39 +73,39 @@ CREATE TABLE `usuarios` (
   `usu_login` varchar(256) NOT NULL,
   `usu_senha` varchar(256) NOT NULL,
   `usu_tipo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `usuarios`
+-- Despejando dados para a tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usu`, `usu_login`, `usu_senha`, `usu_tipo`) VALUES
-(1, 'belaplus', 'd9129b0aaacd85159b0e9edf7469c105', 1);
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1);
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `cadastros`
+-- Índices de tabela `cadastros`
 --
 ALTER TABLE `cadastros`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `faixas`
+-- Índices de tabela `faixas`
 --
 ALTER TABLE `faixas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `usuarios`
+-- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usu`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
