@@ -3,6 +3,36 @@
     text-decoration: none;
 }
 
+/* Exemplo de estilo para o fundo da página */
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #00ff40; /* Cor de fundo personalizada */
+    padding: 20px;
+}
+
+
+
+/* Estilo para links do menu */
+.linkMenu {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.linkMenu:hover {
+    color: #ddd;
+}
+
+/* Estilo para o título */
+h5.text-white.h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 th, td, tr{
     text-align: center;
 }

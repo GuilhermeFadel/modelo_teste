@@ -21,43 +21,37 @@
 </head>
 
 <body>
-    <header>
-        <?php if (isset($_SESSION['login'])) {
-            echo '
-            <div class="collapse" id="navbarToggleExternalContent">
-                
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Bela Plus <span class="text-muted">Oficina</span></h5>
-                    <div>
-                        <a href="?pagina=cadastros" class="linkMenu">
-                            Cadastros
-                        </a>
-                    </div>
-                    <div>
-                        <a href="?pagina=faixas" class="linkMenu">
-                            Faixas
-                        </a>
-                    </div>
-                    <div>
-                        <a href="?pagina=producao" class="linkMenu">
-                            Produção
-                        </a>
-                    </div>
-                    <div>
-                        <a href="logout.php" class="linkMenu">
-                            Sair
-                        </a>
-                    </div>
+    <header class="header">
+    <?php if (isset($_SESSION['login'])) {
+        echo '
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">Artigos Científicos <span class="text-muted">Register</span></h5>
+                <div>
+                    <a href="?pagina=cadastros" class="linkMenu">
+                        Cadastros
+                    </a>
+                </div>
+                <div>
+                    <a href="?pagina=producao" class="linkMenu">
+                        Registros
+                    </a>
+                </div>
+                <div>
+                    <a href="logout.php" class="linkMenu">
+                        Sair
+                    </a>
                 </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
-            ';
-        }
-        ?>
-    </header>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        ';
+    }
+    ?>
+</header>
