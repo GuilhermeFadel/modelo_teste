@@ -1,6 +1,27 @@
-<br>
+<style>
+  body {
+    background: url('img/artigo.jpg') no-repeat center center fixed; /* Imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+}
+
+
+    .caixa {
+        padding: 20px;
+    }
+
+    #table_id {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #table_id th, #table_id td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+</style>
+
 <div class="caixa">
-    <h4>Produção</h4>
+    <h4>Registros</h4>
     <br><br>
     <div>
         <table id="table_id" class="cell-border">
