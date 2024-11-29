@@ -33,7 +33,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="?pagina=producao" class="linkMenu">
+                    <a href="?pagina=registros" class="linkMenu">
                         Registros
                     </a>
                 </div>

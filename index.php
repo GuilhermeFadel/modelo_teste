@@ -21,7 +21,7 @@ if(isset($_SESSION['login'])){
 		$pagina = $_GET['pagina'];
 	}
 	else{
-		$pagina = 'producao';
+		$pagina = 'registros';
 	}
 }
 else{
@@ -29,7 +29,7 @@ else{
 }
 
 switch ($pagina) {
-	case 'producao': include 'views/producao.php'; break;
+	case 'registros': include 'views/registros.php'; break;
 	case 'cadastros': include 'views/cadastros.php'; break;
 	case 'faixas': include 'views/faixas.php'; break;
 	case 'novoCadastro': include 'views/novoCadastro.php'; break;

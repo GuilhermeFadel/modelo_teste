@@ -12,4 +12,4 @@ where id= $id";
 
 mysqli_query($conexao, $query);
 
-header('location:index.php?pagina=producao');
+header('location:index.php?pagina=registros');
